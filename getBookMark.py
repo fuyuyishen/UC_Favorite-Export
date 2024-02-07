@@ -12,8 +12,8 @@ headers = {
     'sec-fetch-mode': 'cors',
     'sec-fetch-site': 'same-origin',
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
-    'x-csrf-token': 'okpv0j1zpChodmXpmlilE9X5',	#这里换上自己的token，登录后在浏览器开发者工具里找。
-    'cookie': r"123"    #这里换上自己的cookie，登录UC云后在浏览器开发者工具里找。
+    'x-csrf-token': 'PiB4rOtD9HjM7xjQh48up2DQ',
+    'cookie': rcna=GHYaHvxTcWACAdoFAQioETNV; xlly_s=1; _UP_A4A_11_=wb9621d0a65f4f52acab64cf4d034bd0; _UP_D_=pc; isg=BG5utZLUh5tYt_P_72WJwVpQv8QwbzJpvzs3pZg0QXEsew_VAPudeU0yN-eXoyqB; csrfToken=PiB4rOtD9HjM7xjQh48up2DQ; _UP_28A_52_=54; st=st9626202ddgtlhyt7l5v56ve1z5rvjq; st.sig=pSKx6pRZB34iCW62F9B0yRSjB2ddc_sLv8H08kTIBsA; token=d385a2f6aa61d208586f218f5582fc8d; token.sig=XCv6p-dsxDrkIq-UEnXuWYDCncZ-wyKYjvI15Q7qv-M; nick_name=%E9%AA%8B%E6%80%80%E5%BE%A1%E9%A2%A8; uid=undefined; tfstk=f7fsskscscm1RuKYbNUFRRSgzzOb8GNP6qTArZhZkCd9GZIwYh-4SZWIMiKF_KRTjItvviDZ_nRNGMshxG7Nus6nGabc_PA4SCbMiIEz47rPSNA0S41sZ1OK9EQpknKTzjmfQIEz4Woh2qVWMOzJqW8NJHYXWxKODpKpxEl9MhpxvvLJvnL2PJV-lv77AXcEMPprWXuQ3-5BJoYf5gTHJ6TMC3ppAjLfOF962NC9gHXBJ65BUpu4WBQlLGLBN5ik59QW6E10yxtXh1ABkGNoPHC1l69GL4GPRKt1p1pIkjQpMhpPhGZsIhBNALYppqNk8g-dS1BQoDQO4hO9JpP8PwpA4HcyVU-Kh72rMetzRyMmnmYovXSt73WwBeY6LyaIXtv9-etzRyMmndLH5UzQRcBc.
 }
 session = requests.session()
 
