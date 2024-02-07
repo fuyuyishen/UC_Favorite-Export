@@ -1,5 +1,5 @@
 import json,requests,time
-#登录UC云找到cookie和 x-csrf-token
+
 host = f'https://cloud.uc.cn/api/bookmark/listdata'
 headers = {
     'Accept': 'application/json, text/plain, */*',
@@ -22,7 +22,7 @@ count=0
 def get_text(guid):
     global text
     global count
-    for i in range(1,500):	#假设最多加载200页,有200多页书签的话改这里
+    for i in range(1,500):
         time.sleep(0.1)
         post_data={'cur_page': i, 'type': "phone", 'dir_guid': str(guid)}
         response = session.post(host, headers=headers,data=post_data).json()
@@ -37,11 +37,11 @@ def get_text(guid):
             print('error')
             continue
         for book in data:
-            if book['is_directory']==1:	#如果是书签目录，则递归调用，相当于DFS
+            if book['is_directory']==1:	
                 print('it is a directory')
                 bk=f"\t<DT><H3>{book['name']}</H3>\n\t<DL><p>\n"
                 text+=bk
-                get_text(book['guid'])	#这里是递归遍历目录
+                get_text(book['guid'])
                 text+="\t</DL><p>\n"
             else:
                 bk=f"\t<DT><A HREF=\"{book['origin_url']}\">{book['title']}</A>\n"
