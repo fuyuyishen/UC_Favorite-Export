@@ -22,7 +22,7 @@ count=0
 def get_text(guid):
     global text
     global count
-    for i in range(1,200):	#假设最多加载200页,有200多页书签的话改这里
+    for i in range(1,500):	#假设最多加载200页,有200多页书签的话改这里
         time.sleep(0.1)
         post_data={'cur_page': i, 'type': "phone", 'dir_guid': str(guid)}
         response = session.post(host, headers=headers,data=post_data).json()
